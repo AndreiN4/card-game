@@ -1,0 +1,5 @@
+Steps:
+1: CSS-ul
+2: Wrapper <section/>
+3: Components
+4: Logica
