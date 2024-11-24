@@ -1,30 +1,32 @@
 /* Neumorphism.css */
-
-/* Background for the entire page */
-body {
+  
+  /* Main app container with neumorphism */
+  body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background: #f2f2f2; /* Light neutral background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full-screen height */
+    background: linear-gradient(145deg, #e4e4e4, #ffffff); /* Light gradient background */
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    min-height: 100vh; /* Ensures full viewport height */
+    box-shadow: inset 5px 5px 15px #d1d1d1, inset -5px -5px 15px #ffffff; /* Neumorphic inner shadow */
   }
   
-  /* Main app container with neumorphism */
   .app-container {
-    width: 90%; /* Width relative to screen */
-    max-width: 800px; /* Limit width on larger screens */
-    padding: 40px;
-    background: #e0e0e0; /* Base color for neumorphism */
-    border-radius: 30px;
-    box-shadow: 25px 25px 50px #bebebe, -25px -25px 50px #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
+    width: 95%; /* Wider container */
+    max-width: 1600px; /* Restrict width on larger screens */
+    height: 95%; /* Taller container */
+    max-height: 1200px; /* Restrict height on larger screens */
+    padding: 60px; /* Internal spacing */
+    background: #e4e4e4; /* Base background color */
+    border-radius: 50px; /* Smooth rounded corners */
+    box-shadow: 40px 40px 80px #bebebe, -40px -40px 80px #ffffff; /* Neumorphic shadow */
+    display: flex; /* Flexbox inside container */
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: center; /* Horizontal centering of children */
+    justify-content: center; /* Vertical centering of children */
+    gap: 50px; /* Space between children */
   }
   
   /* Title of the game */
@@ -70,11 +72,7 @@ body {
     color: #444; /* Slightly darker than the card background */
     text-shadow: 1px 1px 2px #ffffff, -1px -1px 2px #bebebe; /* Text stands out more */
   }
-  
-  body {
-    background: linear-gradient(145deg, #e0e0e0, #f0f0f3);
-  }
-  
+
   .card {
     background: #e0e0e0;
     box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff,
