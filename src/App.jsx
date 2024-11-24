@@ -106,7 +106,7 @@ function App() {
   return (
     <div className="app-container">
       {!gameStarted ? (
-        <button onClick={startGame}>Start Game</button>
+        <button onClick={startGame}>Start Game(from scoring-system)</button>
       ) : (
         <>
           <div className="player">
